@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- =========================
+          🧠 METAINFO Y TIPOGRAFÍA
+    ========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../Media/Home/logo.png" type="image/x-icon">
+
+    <!-- =========================
+          🎨 ESTILOS CSS
+    ========================== -->
+    <link rel="stylesheet" href="../Styles/Normalize.css">
+    <link rel="stylesheet" href="../Styles/Default.css">
+    <link rel="stylesheet" href="../Styles/Geosatelital.css">
+    <link rel="stylesheet" href="../Styles/Nav.css">
+    <link rel="stylesheet" href="../Styles/Footer.css">
+
+    <title>Proyecto | Geosatelital</title>
+</head>
+
+<body>
+
+    <!-- =========================
+          🔝 NAVEGACIÓN PRINCIPAL
+    ========================== -->
+    <header>
+        <nav>
+            <ul class="enlaces__content content">
+                <li><a href="../index.html" class="link--main">Home</a></li>
+
+                <li class="enlace--proyecto">
+                    <a href="#" class="link--main link--proyectos">Proyectos</a>
+                    <ul class="subenlaces__content">
+                        <li><a href="./geosatelital.html">Geosatelital</a></li>
+                        <li><a href="./satelock.html">Sate Lock</a></li>
+                        <li><a href="./seller.html">Seller</a></li>
+                        <li><a href="./levelTour.html">Municipalidad</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./about.html" class="link--main">Sobre mí</a></li>
+            </ul>
+        </nav>
+
+        <!-- =========================
+              🛰️ BANNER PRINCIPAL
+        ========================== -->
+        <div class="banner content">
+            <h1 class="banner__title">Municipalidad de Lima</h1>
+            <p class="banner__text">
+                Panel de transmisión y localización para rutas de Lima y productos de el departamento que monitorea en
+                tiempo real los vehículos estatales. Integra geolocalización, sensores y automatización de servicios
+                para optimizar la trazabilidad, reducir tiempos de verificación y mejorar la eficiencia operativa.
+            </p>
+
+            <p class="text_apoyo">Tecnologías que hacen todo posible</p>
+
+            <!-- 🔧 Tecnologías utilizadas -->
+            <div class="tecnologias">
+                <img src="/JoseCarlos-main/Media/GEOSATELITAL/FIGMA.svg" alt="Figma">
+                <img src="/JoseCarlos-main/Media/GEOSATELITAL/ANALITIC.svg" alt="Analytics">
+                <img src="/JoseCarlos-main/Media/GEOSATELITAL/HTML.svg" alt="HTML">
+                <img src="/JoseCarlos-main/Media/GEOSATELITAL/CSS.svg" alt="CSS">
+                <img src="/JoseCarlos-main/Media/GEOSATELITAL/JS.svg" alt="JavaScript">
+                <img src="/JoseCarlos-main/Media/GEOSATELITAL/REACT.svg" alt="React">
+            </div>
+
+            <!-- 🖼️ Imagen del banner -->
+            <div class="banner__img">
+                <img src="../Media/muni-lima/BANNER.RUTAS DE LIMA.svg" alt="Banner Geosatelital">
+            </div>
+        </div>
+    </header>
+
+    <!-- =========================
+          📄 CONTENIDO PRINCIPAL
+    ========================== -->
+    <main>
+        <!-- =========================
+              🔍 Requerimiento
+        ========================== -->
+        <section class="section section__requerimiento content">
+            <h2 class="section__title--proyecto wd--100">Requerimiento y problemática de la empresa</h2>
+
+            <div class="requerimiento__text">
+                <p>
+                    <span class="bold">Problema:</span> Los usuarios perciben que el panel de monitoreo de vehículos
+                    estatales no cuenta con una estructura visual clara para gestionar y supervisar las rutas y acciones
+                    de cada unidad, lo que dificulta identificar estados, ubicaciones y acceder con rapidez a funciones
+                    operativas clave.
+
+                    <br><br>
+                    <span class="bold">Requerimiento:</span> Optimizar la usabilidad mediante un diseño más intuitivo y
+                    estructurado, con categorías de vehículos claramente definidas, indicadores visuales de estado y un
+                    sistema de navegación que permita acceder a la información, rutas y servicios de forma ágil y
+                    eficiente.
+                </p>
+            </div>
+
+
+        </section>
+        <!-- ==========================================================
+     SECCIÓN: INVESTIGACIÓN UX
+     Descripción: Bloque que presenta la etapa de investigación,
+     análisis del usuario, journey map, card sorting, benchmarking
+     y bocetos del proyecto.
+     ========================================================== -->
+        <section class="investigacion">
+            <div class="contenedor content">
+                <p class="subtitulo_ayuda">Detecta oportunidades reales en entornos digitales.</p>
+                <h1 class="Titulo_general">Investigación UX: Comprendiendo al Usuario y el Problema Real</h2>
+                    <hr class="linea-blanca">
+
+                    <div class="investigacion__grid">
+                        <!-- Card 1 -->
+                        <article class="card">
+                            <h3>User Person</h3>
+                            <p class="subtitulo_card">Definí tres user personas clave: Administrador estatal, Conductor
+                                del vehículo oficial y Jefe de operaciones.</p>
+                            <p class="p_card">Esto permitió identificar la necesidad de supervisión centralizada,
+                                actualización en tiempo real y alertas automáticas, guiando el diseño hacia interfaces
+                                claras y eficientes para optimizar la trazabilidad y seguridad de la flota estatal.</p>
+                            <img src="/JoseCarlos-main/Media/GEOSATELITAL/user-person.svg" alt="User Person">
+                        </article>
+
+                        <!-- Card 2 -->
+
+                        <article class="card card--wide">
+                            <h3>Costumer Journey Map</h3>
+                            <p class="p_card_2">El User Journey Map refleja que el usuario busca simplicidad y control,
+                                navega con facilidad para monitorear vehículos y rutas, recibe alertas oportunas y
+                                finaliza satisfecho y confiado en la gestión del sistema.
+                            </p>
+                            <img src="/JoseCarlos-main/Media/muni-lima/journy.svg" alt="Journey Map">
+                        </article>
+
+                        <!-- Card 3 -->
+                        <article class="card">
+                            <h3>Card Storing</h3>
+                            <p class="subtitulo_card">Apliqué Card Sorting con foco en las funciones de monitoreo y
+                                control remoto.</p>
+                            <p class="p_card">Esto me permitió comprender cómo los usuarios organizan intuitivamente
+                                funciones como seguimiento en tiempo real, alertas, historial y control de vehículos, lo
+                                que facilitó diseñar una interfaz más lógica y eficiente, optimizando el acceso a
+                                funciones clave de monitoreo y trazabilidad estatal.</p>
+                            <img src="/JoseCarlos-main/Media/muni-lima/card.svg" alt="User Person">
+                        </article>
+
+                        <!-- Card 4 -->
+                        <article class="card">
+                            <h3>Benchmarking</h3>
+                            <p class="subtitulo_card">Busque Empresas del mismo rubro para poder obtener estrategias
+                                efectivas </p>
+                            <p class="p_card">Analicé plataformas similares del sector para evaluar fortalezas,
+                                debilidades y oportunidades de diferenciación. Este análisis competitivo fue clave para
+                                tomar decisiones de diseño informadas y ofrecer una propuesta con mayor valor agregado.
+                            </p>
+                            <img src="/JoseCarlos-main/Media/muni-lima/benchamarking.svg" alt="User Person">
+                        </article>
+
+                        <!-- Card 5 -->
+                        <article class="card">
+                            <h3>BOCETOS</h3>
+                            <p class="subtitulo_card">Desarrollé bocetos iniciales para visualizar la estructura y
+                                flujos
+                                del monitoreo vehicular</p>
+                            <p class="p_card">Los bocetos fueron diseñados con la información recolectada, enfocándose
+                                en la supervisión del área de sistemas, priorizando usabilidad y funcionalidades clave
+                                para un control eficiente.</p>
+                            <img src="/JoseCarlos-main/Media/muni-lima/bocetos.svg" alt="User Person">
+                        </article>
+                    </div>
+            </div>
+        </section>
+        <!-- :::::::::::: SECTION: Diseño de Soluciones UX/UI y Validación con Usuarios :::::::::::: -->
+        <section class="diseno">
+            <div class="contenedor content">
+                <p class="subtitulo_ayuda">Transformando la investigación en soluciones funcionales y visuales.</p>
+                <h1 class="Titulo_general">Diseño de Soluciones UX/UI y Validación con Usuarios</h1>
+                <hr class="linea-blanca">
+                <div class="diseno__grid">
+                    <!-- Card 1 -->
+                    <article class="card">
+                        <h3>DESIGN SISTEM</h3>
+                        <p class="p_card">Creación de Design System para la plataforma de monitoreo y localización
+                            usando Atomic
+                            Design, desde átomos hasta moléculas y organismos.</p>
+                        <img src="/JoseCarlos-main/Media/muni-lima/designs siotem.svg" alt="Wireframes">
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="card">
+                        <h3>DESIGN AND RESPONSIVE</h3>
+                        <p class="p_card">Se diseñó la plataforma junto con su versión responsive para asegurar
+                            efectividad en diversos
+                            dispositivos como celulares, tablets y computadoras.</p>
+                        <img src="/JoseCarlos-main/Media/muni-lima/design.svg" alt="Prototipado">
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="card">
+                        <h3>PRUEBAS DE USABILIDAD</h3>
+                        <p>Los mapas de calor permiten identificar áreas de mayor interacción, detectar patrones de uso
+                            y zonas ignoradas, optimizando la disposición de elementos para mejorar la eficiencia y la
+                            experiencia del usuario.</p>
+                        <img src="/JoseCarlos-main/Media/muni-lima/mapa de calor.svg" alt="Testeo con Usuarios">
+                    </article>
+
+                    <!-- Card 4 (grande) -->
+                    <article class="card card--grande">
+                        <h3>DIAGRAMA DE FLUJO</h3>
+                        <p class="p_card">Este diagrama de flujo resume el recorrido del usuario en el Panel de Rutas
+                            Lima, desde el ingreso hasta la gestión y cierre de operaciones, garantizando una
+                            interacción clara y eficiente. Representa visualmente los pasos clave: acceso, monitoreo de
+                            vehículos, gestión de acciones, generación de reportes y cierre de sesión, optimizando la
+                            experiencia y la toma de decisiones operativas
+                        </p>
+                        <img src="/JoseCarlos-main/Media/muni-lima/Diagrama de flujo inicio - perfil.svg"
+                            alt="Diseño Final">
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- ========================================= -->
+        <!-- Sección: Componentes React -->
+        <!-- ========================================= -->
+        <section class="componentes-react-section">
+            <div class="contenedor-componentes-react">
+                <p class="subtitulo_ayuda">Acelera el desarrollo con estructuras escalables.</p>
+                <h1 class="Titulo_general">Desarrollo Frontend: Construcción de Componentes Reutilizables en React</h1>
+                <hr class="linea-blanca">
+                <p class="texto_ayuda_react">Se desarrolló la plataforma en React con Atomic Design, logrando una
+                    estructura escalable y fácil de
+                    mantener. Con diseño optimizado para SEO y marketing digital, se mejoró la visibilidad online, la
+                    experiencia del usuario y la tasa de conversión en un 20%, maximizando el retorno de inversión.</p>
+
+                <div class="imagen-react-wrapper">
+                    <img src="/JoseCarlos-main/Media/muni-lima/react.svg" alt="Vista de componentes React"
+                        class="imagen-react" />
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__content content">
+            <div class="footer__info">
+                <h3 class="footer__title">Portafolio Carlos Meza</h3>
+                <ul>
+                    <li>
+                        Todo el contenido de este portafolio es propiedad de Carlos Meza
+                        y no puede ser reproducido sin autorización.
+                    </li>
+                    <li>
+                        No nos responsabilizamos por el contenido de los sitios web externos a los que se enlaza desde
+                        este portafolio
+                    </li>
+                    <li>
+                        Podemos modificar estos Términos y Condiciones en cualquier momento. Revisa esta página
+                        periódicamente para estar al tanto de los cambios
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__enlaces">
+                <ul>
+                    <li><a href="https://www.facebook.com/mezajosecarlos11"><img
+                                src="/JoseCarlos-main/Media/Home/facebo.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/gmeza16"><img src="/JoseCarlos-main/Media/Home/instagram.png"
+                                alt="Instagram"></a></li>
+                    <li><a href="https://www.linkedin.com/in/jose-carlos-meza-27437b248"><img
+                                src="/JoseCarlos-main/Media/Home/linkedin.svg" alt="Linkedin"></a></li>
+                    <li><a href="#"><img src="/JoseCarlos-main/Media/Home/tiktok.png" alt="TikTok"></a></li>
+                    <li><a href="#"><img src="/JoseCarlos-main/Media/Home/x.png" alt="X"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__sign">
+            <p>Design by <span>Carlos Meza</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

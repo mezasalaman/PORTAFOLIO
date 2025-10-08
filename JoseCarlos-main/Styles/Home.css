@@ -1,0 +1,459 @@
+/* :::::::::::::::::::::::::::::::::::::::::::: */
+/* ==============   HEADER   ================== */
+/* :::::::::::::::::::::::::::::::::::::::::::: */
+
+/* ---------- Animaciones ---------- */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- Banner ---------- */
+.banner {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.banner__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.banner__info {
+    flex: 1;
+    min-width: 300px;
+    gap: 10rem;
+    /* Animación al cargar */
+    animation: fadeUp 1s ease-out both;
+}
+
+.banner__title {
+    text-transform: uppercase;
+    margin-bottom: 72px;
+    animation: fadeUp 1s ease-out 0.4s both;
+}
+
+.banner__title span {
+    color: var(--primary-color);
+}
+
+.banner__info p {
+    max-width: 700px;
+
+}
+
+.banner__img {
+    flex: 1;
+    min-width: 350px;
+    display: flex;
+    justify-content: flex-end;
+    /* Animación con delay */
+    animation: fadeUp 1s ease-out 0.7s both;
+}
+
+.banner__img img {
+    max-width: 380px;
+    margin-right: 8rem;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Responsive - Banner */
+@media (max-width: 480px) {
+    .banner__img img {
+        margin-right: 0;
+        margin-bottom: 10rem;
+    }
+
+    .banner__content {
+        flex-direction: column;
+        text-align: center;
+
+
+    }
+
+    .banner__img {
+        justify-content: center;
+    }
+
+    .banner__title {
+        font-size: 2.8rem;
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+}
+
+/* ---------- Typewriter (texto animado) ---------- */
+.typewriter {
+    font-weight: 600;
+    animation: fadeUp 1s ease-out 0.5s both;
+}
+
+.typewriter-delay {
+    animation: fadeUp 1s ease-out 0.6s both;
+}
+
+/* ---------- Botón CV ---------- */
+.btn-cv {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 26px;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid #00027C;
+    border-radius: 8px;
+    text-decoration: none;
+    line-height: 1;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    animation: fadeUp 1s ease-out 0.7s both;
+}
+
+.btn-cv:hover {
+    background-color: #00027C;
+    color: black;
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* Responsive - Botón CV */
+@media (max-width: 480px) {
+    .btn-cv {
+        position: absolute;
+        padding: 25px 30px;
+        top: 200px;
+        right: 125px;
+        transform: translateX(-50%);
+        margin-top: 450px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        animation: fadeUp 1s ease-out 0.6s both;
+    }
+
+    .btn-cv:hover {
+        transform: translateX(-50%) scale(1.05);
+        filter: brightness(1.2);
+    }
+
+    .btn-cv:focus {
+        outline: none;
+    }
+
+    .btn-cv:active {
+        background-color: transparent;
+        color: white;
+    }
+}
+
+
+/* :::::::::::::::::::::::::::::::::::::::::::: */
+/* ==============   ABOUT   =================== */
+/* :::::::::::::::::::::::::::::::::::::::::::: */
+
+.about__cards .card__title {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 3rem 0;
+}
+
+.about__cards ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.about__cards ul li {
+    min-width: 18.5rem;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #00027C;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.about__cards ul li:hover {
+    background-color: #00027C;
+    color: white;
+}
+
+/* Cards de Estrategias */
+.about__cards .card--estrategias ul li {
+    border: 2px solid var(--blue);
+}
+
+.about__cards .card--estrategias ul li:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+/* Cards de Metodologías */
+.about__cards .card--metodologias ul li {
+    border: 2px solid var(--yellow);
+}
+
+.about__cards .card--metodologias ul li:hover {
+    background-color: var(--yellow);
+    color: black;
+}
+
+/* Responsive - About */
+@media (max-width: 480px) {
+    ul.enlaces__content.content {
+        margin-bottom: 4rem;
+        padding-bottom: 0;
+    }
+
+    .about__cards ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* :::::::::::::::::::::::::::::::::::::::::::: */
+/* ==============   PROYECTOS   =============== */
+/* :::::::::::::::::::::::::::::::::::::::::::: */
+
+.section--proyectos {
+    padding: 8rem 0;
+}
+
+.section--proyectos .section__title {
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* Texto descriptivo */
+.section--proyectos p {
+    max-width: 105rem;
+    margin: 0;
+    text-align: left;
+    /* ✅ Alineado a la izquierda en desktop */
+    line-height: 1.8;
+    color: #eaeaea;
+}
+
+/* GRID PRINCIPAL */
+.proyectos__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* ✅ Dos columnas */
+    gap: 3rem 4rem;
+    justify-items: center;
+    margin-top: 5rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.proyecto__card {
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.proyecto__card a {
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.proyecto__card a:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.proyecto__card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+
+/* :::::::::::::::: RESPONSIVE :::::::::::::::: */
+@media (max-width: 1024px) {
+    .proyectos__cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .proyecto__card {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section--proyectos p {
+        text-align: center;
+        /* ✅ Centrado solo en pantallas medianas o menores */
+        margin: 0 auto;
+    }
+
+    .proyectos__cards {
+        grid-template-columns: 1fr;
+        /* ✅ Una tarjeta por fila */
+        gap: 3rem;
+    }
+
+    .proyecto__card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section--proyectos {
+        padding: 5rem 0;
+    }
+
+    .section--proyectos .section__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .section--proyectos p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .proyectos__cards {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .proyecto__card img {
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+/* :::::::::::::::::::::::::::::::::::::::::::: */
+/* ============== EXPERIENCIA ================= */
+/* :::::::::::::::::::::::::::::::::::::::::::: */
+
+.section--experiencia .content {
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 10rem;
+}
+
+.experiencia__cards {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15rem;
+}
+
+.experiencia__cards .card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 5rem;
+}
+
+/* Imagenes */
+.experiencia__cards .card__img__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencia__cards .card .card__img {
+    max-width: 10rem;
+}
+
+/* Línea de conexión */
+.experiencia__cards .card .card__line {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.experiencia__cards .card .card__line .line {
+    width: 2px;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+/* Contenido */
+.experiencia__cards .card .card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experiencia__cards .card .card__title {
+    text-transform: uppercase;
+}
+
+.experiencia__cards .card .card__competencias {
+    list-style: disc;
+    padding-left: 1.8rem;
+    line-height: 4rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencia__cards .card .card__herramientas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.experiencia__cards .card .card__herramientas img {
+    max-width: 5rem;
+    border-radius: 8px;
+}
+
+/* Responsive - Experiencia */
+@media (max-width: 480px) {
+    .experiencia__cards .card {
+        column-gap: 2.5rem;
+    }
+
+    .experiencia__cards .card .card__img {
+        max-width: 5rem;
+    }
+
+    .experiencia__cards .card .card__header>p {
+        margin: 1rem 0;
+        font-size: 1.4rem;
+    }
+
+    .experiencia__cards .card .card__text {
+        font-size: 1.4rem;
+    }
+
+    .experiencia__cards .card .card__competencias {
+        line-height: 3rem;
+        gap: 2rem;
+    }
+
+    .experiencia__cards .card .card__herramientas {
+        row-gap: 2rem;
+    }
+}

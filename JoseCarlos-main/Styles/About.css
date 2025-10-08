@@ -1,0 +1,277 @@
+/* :::::::::::::::::::::::::::::::::::::::::::: */
+/* ==============   HEADER   ================== */
+/* :::::::::::::::::::::::::::::::::::::::::::: */
+
+/* ---------- Animaciones ---------- */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- Banner ---------- */
+.banner {
+    padding: 2rem 0px;
+    margin-bottom: 10rem;
+}
+
+.banner .banner__info {
+    display: flex;
+    flex-direction: column;
+    animation: fadeUp 1s ease-out both;
+}
+
+.banner .banner__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+    animation: fadeUp 1s ease-out 0.2s both;
+}
+
+.banner .banner__img--responsive {
+    display: none;
+    animation: fadeUp 1s ease-out 0.4s both;
+}
+
+.banner .banner__title {
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    margin-top: 3rem;
+    animation: fadeUp 1s ease-out 0.3s both;
+}
+
+.banner .banner__cargo {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+    animation: fadeUp 1s ease-out 0.4s both;
+}
+
+.banner .banner__descripcion {
+    padding: 1rem 0px;
+    animation: fadeUp 1s ease-out 0.5s both;
+}
+
+.banner ul {
+    display: flex;
+    column-gap: 1.5rem;
+    margin-top: auto;
+    animation: fadeUp 1s ease-out 0.6s both;
+}
+
+.bton p {
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid #00027C;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bton p:hover {
+    background-color: #00027C;
+    color: white;
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1180px) {
+    .banner {
+        padding: 0px;
+    }
+
+    .banner__info {
+        align-items: center;
+        gap: 3rem;
+        animation: fadeUp 0.8s ease-out both;
+    }
+
+    .banner .banner__content {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 7rem;
+        animation: fadeUp 0.8s ease-out 0.2s both;
+    }
+
+    .banner__title,
+    .banner__cargo {
+        text-align: center;
+    }
+
+    .banner .banner__img--responsive {
+        display: block;
+        max-width: 28rem;
+        margin: 0 auto;
+        animation: fadeUp 1s ease-out 0.4s both;
+    }
+
+    .banner .banner__img {
+        display: none;
+    }
+
+    .banner .banner__descripcion {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    ul.enlaces__content.content {
+        margin-bottom: 2rem;
+        padding-bottom: 0;
+    }
+
+    .banner__info {
+        gap: 1rem;
+        top: 20rem;
+        animation: fadeUp 0.6s ease-out both;
+    }
+
+    .banner .banner__img {
+        max-width: 200px;
+        margin: 0 auto;
+        animation: fadeUp 0.6s ease-out 0.3s both;
+    }
+
+    .banner .banner__title {
+        font-size: 3.2rem;
+        animation: fadeUp 0.6s ease-out 0.2s both;
+    }
+
+    .banner ul {
+        justify-content: center;
+    }
+
+    .banner ul p {
+        font-size: 1.2rem;
+    }
+
+    .bton p {
+        font-size: 32px;
+        font-weight: 400;
+        border: 3px solid #00027C;
+        padding: 2rem 2rem;
+        border-radius: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+}
+
+/* :::::::::: SECTION:EDUCATION ::::::::::*/
+.section--education .cards--education {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15rem;
+    margin: 10rem 0px;
+}
+
+.cards--education .card {
+    display: flex;
+    column-gap: 3rem;
+}
+
+.cards--education .card__img {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards--education .card__img .content__line {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.cards--education .content__line .line {
+    content: "";
+    height: 100%;
+    width: 2px;
+    background-color: var(--primary-color);
+}
+
+.cards--education .card__title {
+    text-transform: uppercase;
+}
+
+.cards--education .card__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.cards--education .card__info p,
+.cards--education .card__info li {
+    margin: 0px;
+    font-weight: 200;
+}
+
+.cards--education .card__info .card__subtitle {
+    font-weight: 600;
+}
+
+.cards--education .card__info ul {
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    list-style: disc;
+}
+
+@media(max-width:480px) {
+    .cards--education .card__info p {
+        text-align: justify;
+    }
+}
+
+/* :::::::::: SECTION:APP ::::::::::*/
+.section--app .cards__app {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem 0px;
+    column-gap: 3rem;
+    row-gap: 5rem;
+}
+
+.section--app .cards__app .card {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section--app .cards__app .card__title {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section--app .cards__app img {
+    max-width: 10rem;
+}
+
+.section--app .cards__app .card__info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.section--app .cards__app .card__level {
+    margin-top: auto;
+}
+
+@media(max-width:480px) {
+    .section--app .cards__app {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner ul p {
+        font-size: 1.4rem;
+    }
+}

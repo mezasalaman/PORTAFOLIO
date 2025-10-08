@@ -1,0 +1,74 @@
+/* NAV */
+.enlaces__content {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 2rem;
+    padding: 5rem 0px;
+}
+
+.enlaces__content .link--main {
+    color: var(--white);
+    padding-bottom: 2rem;
+}
+
+.enlaces__content>li:first-child {
+    margin-right: auto;
+}
+
+.enlaces__content .enlace--proyecto {
+    position: relative;
+}
+
+.enlaces__content .enlace--proyecto:hover .subenlaces__content {
+    opacity: 1;
+}
+
+.enlaces__content .enlace--proyecto:hover .subenlaces__content a:hover {
+    font-weight: 500;
+}
+
+.subenlaces__content {
+    position: absolute;
+    top: 100%;
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+}
+
+.subenlaces__content::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 12px solid transparent;
+    border-bottom: 20px solid var(--white);
+    border-left: 12px solid transparent;
+    top: -15px;
+    position: absolute;
+}
+
+.subenlaces__content a {
+    color: var(--black);
+
+}
+
+.subenlaces__content {
+    z-index: 9999;
+    /* 👈 hace que el menú esté por encima de la imagen */
+    overflow: visible;
+    /* por si se recorta en algún contenedor */
+}
+
+@media(max-width:480px) {
+    .enlaces__content {
+        justify-content: center;
+    }
+
+    .enlaces__content>li:first-child {
+        margin-right: 0px;
+    }
+}
