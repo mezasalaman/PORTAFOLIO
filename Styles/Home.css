@@ -158,6 +158,76 @@
     }
 }
 
+/* :::::::::::::::: RESPONSIVE SMALL :::::::::::::::: */
+
+@media (max-width: 450px) {
+
+
+
+    /* Botón CV */
+    .btn-cv {
+
+        top: 200px;
+        right: 90px;
+
+    }
+}
+
+/* :::::::::::::::: EXTRA SMALL :::::::::::::::: */
+@media (max-width: 400px) {
+
+
+
+    /* Botón CV */
+    .btn-cv {
+
+        top: 200px;
+        right: 90px;
+
+    }
+
+    /* Cards */
+    .about__cards ul {
+        grid-template-columns: 1fr;
+    }
+
+    .about__cards ul li {
+        min-width: 100%;
+        padding: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    /* Proyectos */
+    .proyectos__cards {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .proyecto__card img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Experiencia */
+    .experiencia__cards {
+        row-gap: 6rem;
+    }
+
+    .experiencia__cards .card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .experiencia__cards .card__img {
+        margin: 0 auto 1rem;
+    }
+
+    .experiencia__cards .card__herramientas {
+        justify-content: center;
+    }
+}
+
 
 /* :::::::::::::::::::::::::::::::::::::::::::: */
 /* ==============   ABOUT   =================== */
